@@ -1,13 +1,18 @@
-n = list(map(int, input("Enter numbers separated by spaces: ").split()))
+def count_even_odd(numbers):
+    even = 0
+    odd = 0
 
-even_count = 0
-odd_count = 0
+    for num in numbers:
+        if num % 2 == 0:
+            even += 1
+        else:
+            odd += 1
 
-for i in n:
-    if i % 2 == 0:
-        even_count += 1
-    else:
-        odd_count += 1
+    return even, odd
 
-print("Even:", even_count)
-print("Odd:", odd_count)
+
+numbers = list(map(int, input("Enter numbers separated by spaces: ").split()))
+even, odd = count_even_odd(numbers)
+
+print("Even:", even)
+print("Odd:", odd)
