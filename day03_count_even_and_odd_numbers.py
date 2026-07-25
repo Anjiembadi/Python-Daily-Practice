@@ -15,4 +15,8 @@ numbers = list(map(int, input("Enter numbers separated by spaces: ").split()))
 even, odd = count_even_odd(numbers)
 
 print("Even:", even)
+<<<<<<< HEAD
 print("Odd:", odd)
+=======
+print("Odd:", odd)
+>>>>>>> 4b6b000 (Day 4: Square From 1 to N)
